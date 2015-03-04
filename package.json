@@ -1,0 +1,29 @@
+{
+  "name": "easing-js",
+  "version": "1.0.0",
+  "description": "Penner easing functions for node",
+  "main": "dist/easing.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rdy/easing-js.git"
+  },
+  "keywords": [
+    "easing",
+    "penner",
+    "animation"
+  ],
+  "author": "rdy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rdy/easing-js/issues"
+  },
+  "homepage": "https://github.com/rdy/easing-js",
+  "devDependencies": {
+    "babel": "^4.6.6",
+    "gulp": "^3.8.11",
+    "gulp-babel": "^4.0.0",
+    "gulp-eslint": "^0.5.0",
+    "gulp-load-plugins": "^0.8.1",
+    "require-dir": "^0.1.0"
+  }
+}
