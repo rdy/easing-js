@@ -1,4 +1,4 @@
-module.exports = {
+var Easing = {
   linear(t, b, c, d) {
     return c * t / d + b;
   },
@@ -217,3 +217,5 @@ module.exports = {
     }
   }
 };
+
+module.exports = Easing;
