@@ -1,8 +1,10 @@
-var gulp = require('gulp');
-var plugins = require('gulp-load-plugins')();
+import gulp from 'gulp';
+import babel from 'gulp-babel';
+import mergeStream from 'merge-stream';
 
-gulp.task('build', function() {
-  return gulp.src('src/**/*.js')
-    .pipe(plugins.babel())
-    .pipe(gulp.dest('dist'));
+gulp.task('build', () => {
+  return mergeStream(
+      gulp.src('src/**/*.js').pipe(babel()),
+      gulp.src(['package.json', 'LICENSE', 'README.md'])
+    ).pipe(gulp.dest('dist'));
 });

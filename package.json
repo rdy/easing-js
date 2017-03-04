@@ -27,7 +27,7 @@
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-eslint": "^3.0.1",
-    "gulp-load-plugins": "^0.8.1",
+    "merge-stream": "^1.0.1",
     "npm": "^4.3.0",
     "require-dir": "^0.1.0"
   }

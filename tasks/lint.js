@@ -1,9 +1,9 @@
-var gulp = require('gulp');
-var plugins = require('gulp-load-plugins')();
+import gulp from 'gulp';
+import eslint from 'gulp-eslint';
 
-gulp.task('lint', function () {
-  return gulp.src(['gulpfile.babel.js', 'src/**/*.js'])
-    .pipe(plugins.eslint())
-    .pipe(plugins.eslint.format('stylish'))
-    .pipe(plugins.eslint.failOnError())
+gulp.task('lint', () => {
+  return gulp.src(['gulpfile.babel.js', 'src/**/*.js'], {base: '.'})
+    .pipe(eslint())
+    .pipe(eslint.format('stylish'))
+    .pipe(eslint.failOnError())
 });
