@@ -1,5 +1,6 @@
 "use strict";
 
+exports.__esModule = true;
 var Easing = {
   linear: function linear(t, b, c, d) {
     return c * t / d + b;
@@ -220,4 +221,5 @@ var Easing = {
   }
 };
 
-module.exports = Easing;
+exports.default = Easing;
+module.exports = exports["default"];

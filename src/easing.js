@@ -1,4 +1,4 @@
-var Easing = {
+const Easing = {
   linear(t, b, c, d) {
     return c * t / d + b;
   },
@@ -218,4 +218,4 @@ var Easing = {
   }
 };
 
-module.exports = Easing;
+export default Easing;
