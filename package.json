@@ -1,6 +1,6 @@
 {
   "name": "easing-js",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Penner easing functions for node",
   "main": "dist/easing.js",
   "repository": {
